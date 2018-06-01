@@ -1,3 +1,44 @@
+
 .fancy-header  {
-    color: deepskyblue;
+    color: brown;
+    text-decoration: underline;
+}
+
+h1 {
+    color: indianred;
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 3px 3px 5px dimgrey;
+
+
+}
+
+body {
+    background-image: url("../Images/greybackground.jpg");
+    font-family: fantasy;
+    font-size: large;
+}
+
+li {
+    list-style: circle;
+}
+
+table, th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: left;
+    background: darksalmon;
+    box-shadow: 5px 5px 5px brown;
+}
+
+th {
+    text-decoration: underline;
+    font-size: larger;
+    text-align: center;
+}
+
+a:hover {
+    color: red;
+    text-shadow: 3px 3px 5px dimgrey;
+
 }
