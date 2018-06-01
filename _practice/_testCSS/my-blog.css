@@ -1,0 +1,16 @@
+body {
+    font-family: fantasy, sans-serif;
+    background-color: lightgrey;
+}
+
+h1 {
+    text-align: center;
+}
+ p {
+    text-align: center;
+}
+
+#blog-name {
+    text-align: center;
+    background-color: black;
+}
