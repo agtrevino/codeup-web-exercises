@@ -5,9 +5,6 @@
     --light-bg: #FFF;
     --separator-color: #DDD;
 }
-.container {
-    margin: 2em;
-}
 * {
     box-sizing: border-box;
 }
@@ -28,6 +25,9 @@ header {
 a {
     color: var(--link-color);
 }
+.container {
+    margin: 2em;
+}
 .nav {
     list-style-type: none;
     padding: 0;
@@ -46,9 +46,10 @@ a {
     color: var(--link-color);
 }
 .top-nav {
+    background-color: var(--main-bg);
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 1000;
 }
 .profile {
     background: var(--light-bg);
@@ -73,7 +74,7 @@ a {
     text-indent: 0;
 }
 .profile-entry {
-    margin: .5em;
+    margin: .5em 0;
 }
 .timeline {
     float: left;

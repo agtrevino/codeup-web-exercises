@@ -5,12 +5,53 @@ body {
 
 h1 {
     text-align: center;
+    text-decoration: underline black;
 }
- p {
+
+p {
+    font-family: Arial, Ubuntu, sans-serif;
+
+}
+
+.blog-img {
+    background-image: url("https://loremflickr.com/1200/300");
+    background-size: cover;
+    min-height: 10px;
+    padding: 0 0 10px 0;
+}
+
+.blog-img {
+    max-width: calc(100% - 0px);
+    max-height: calc(100% - 0em);
+}
+
+ .blog-welcome {
     text-align: center;
 }
 
-#blog-name {
+.blog-name {
     text-align: center;
     background-color: black;
+    border-radius: 2px;
+    padding: 2px 2px 0 2px;
+}
+.blog-title {
+    border-bottom: 1px solid grey;
+
+}
+
+.blog-date {
+    color: dimgrey;
+}
+
+.box-1 {
+    background: white;
+    float: left;
+    height: 50% ;
+    width: calc(60% - 1em);
+    padding: 5px;
+    margin: auto;
+    border: 1px solid darkgray;
+    overflow: auto;
+
 }
