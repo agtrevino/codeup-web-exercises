@@ -1,6 +1,7 @@
 body {
     font-family: fantasy, sans-serif;
     background-color: lightgrey;
+    margin: 20px;
 }
 
 h1 {
@@ -8,21 +9,22 @@ h1 {
     text-decoration: underline black;
 }
 
+h2 {
+    padding: 10px;
+}
+
 p {
     font-family: Arial, Ubuntu, sans-serif;
+    padding: 10px;
 
 }
 
 .blog-img {
     background-image: url("https://loremflickr.com/1200/300");
     background-size: cover;
-    min-height: 10px;
-    padding: 0 0 10px 0;
-}
-
-.blog-img {
-    max-width: calc(100% - 0px);
-    max-height: calc(100% - 0em);
+    padding: 0;
+    height: 200px;
+    width: 100%;
 }
 
  .blog-welcome {
@@ -36,6 +38,7 @@ p {
     padding: 2px 2px 0 2px;
 }
 .blog-title {
+    padding: 0 15px;
     border-bottom: 1px solid grey;
 
 }
@@ -45,11 +48,12 @@ p {
 }
 
 .box-1 {
+    box-shadow: black;
     background: white;
     float: left;
     height: 50% ;
     width: calc(60% - 1em);
-    padding: 5px;
+    padding-bottom: 15px;
     margin: auto;
     border: 1px solid darkgray;
     overflow: auto;

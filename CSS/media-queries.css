@@ -1,24 +1,24 @@
 /* small devices */
 @media only screen and (max-width: 425px) {
-
     html, body {
+        font-family: Helvetica;
         max-width: 100%;
-        margin: 5px;
+        margin: 15px;
         overflow-x: hidden;
     }
-    .alert-info {
-        color: black;
+    .alert-info a {
+        display: block;
+        text-decoration: none;
         background: lightskyblue;
         border: 2.5px solid lightgray;
-        width: 100%;
-        padding: 15px 0;
-        margin: 5px 0 ;
+        padding: 15px;
         text-align: center;
     }
     .nav-links {
         padding-left: 0;
+        font-weight: bold;
+        text-decoration: none;
     }
-
     li {
         background-color: lightgray;
         list-style: none;
@@ -30,7 +30,6 @@
     h1 {
         text-align: center;
     }
-
     img {
         height: auto;
         width: 100%;
@@ -40,15 +39,12 @@
 }
 
 @media only screen and (min-width: 426px) {
-
     html, body {
+        font-family: Helvetica;
         margin: 15px 10px;
-
     }
-    .alert-info {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
+    .hidden-on-desktop {
+        display: none;
     }
 
     h1 {
@@ -59,7 +55,6 @@
     }
 
     li {
-        float: right 10%;
         display: inline-block;
         max-width: 25%;
         text-align: right;
@@ -68,9 +63,9 @@
     }
 
     nav {
+        float: right;
         display: block;
         max-width: 50%;
-        float: right;
         margin: auto;
     }
     img {
