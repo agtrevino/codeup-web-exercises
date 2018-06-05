@@ -1,0 +1,22 @@
+@media only screen and (max-width: 425px) {
+    html, body {
+        font-family: Helvetica;
+        max-width: 100%;
+        margin: 15px;
+        overflow-x: hidden;
+    }
+    .column {
+        float: left;
+        padding: 10px;
+    }
+    .column.one-third {
+        width: 33.33%;
+    }
+    .column.one-half {
+        width: 50%;
+    }
+    h1 {
+        text-align: center;
+    }
+
+}

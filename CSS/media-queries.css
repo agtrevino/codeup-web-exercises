@@ -22,7 +22,6 @@
     li {
         background-color: lightgray;
         list-style: none;
-        width: 100%;
         padding: 10px 0;
         text-align: center;
         margin: 10px 0;
@@ -32,7 +31,6 @@
     }
     img {
         height: auto;
-        width: 100%;
         display: block;
         margin: 15px auto;
     }
@@ -91,5 +89,7 @@
     
     footer {
         height: 30px;
+        width: 100%;
+        text-align: left;
     }
 }

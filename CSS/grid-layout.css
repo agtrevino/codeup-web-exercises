@@ -1,0 +1,48 @@
+
+    html, body {
+        background: lightcyan;
+        font-family: Helvetica;
+        max-width: 100%;
+        margin: 15px;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    .row {
+        /*background: blue;*/
+        float: left;
+        width: 100%;
+    }
+    .column {
+        margin: 5px 0;
+        float: left;
+        padding: 10px;
+    }
+    .column.one-half {
+        border: 1px solid grey;
+        background: blue;
+        width: calc(50% - 22px);
+    }
+    .column.one-third {
+        border: 1px solid grey;
+        background: blue;
+        background: green;
+        width: calc(33.33% - 22px);
+    }
+    .column.one-fourth {
+        border: 1px solid grey;
+        background: blue;
+        background: lightcoral;
+        width: calc(25% - 22px);
+    }
+    .column.one-sixth {
+        border: 1px solid grey;
+        background: blue;
+        background: blueviolet;
+        width: calc(16.66% - 22px);
+    }
+    .column.one-eighth {
+        border: 1px solid grey;
+        background: blue;
+        background: deeppink;
+        width: calc(12.5% - 22px);
+    }
