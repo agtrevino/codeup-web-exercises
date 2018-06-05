@@ -1,40 +1,100 @@
 /* small devices */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
 
+    html, body {
+        max-width: 100%;
+        margin: 5px;
+        overflow-x: hidden;
+    }
     .alert-info {
         color: black;
         background: lightskyblue;
-        border: 1px solid lightgray;
+        border: 2.5px solid lightgray;
         width: 100%;
-        padding: 5px 0;
+        padding: 15px 0;
         margin: 5px 0 ;
         text-align: center;
     }
+    .nav-links {
+        padding-left: 0;
+    }
 
     li {
-        background: lightgray;
+        background-color: lightgray;
         list-style: none;
         width: 100%;
-        padding: 5px 0;
-        margin: 5px 0 ;
+        padding: 10px 0;
         text-align: center;
-
+        margin: 10px 0;
     }
     h1 {
         text-align: center;
     }
 
-    .header-img {
-
-        max-width: calc(100% - 5px);
-        overflow: auto;
+    img {
+        height: auto;
+        width: 100%;
+        display: block;
+        margin: 15px auto;
     }
-
 }
 
-@media only screen and (min-width: 600px) {
-    .nav-links {
-        background: green;
+@media only screen and (min-width: 426px) {
+
+    html, body {
+        margin: 15px 10px;
+
+    }
+    .alert-info {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
     }
 
+    h1 {
+        display: inline-block;
+        max-width: 50%;
+        text-align: left;
+        margin: auto;
+    }
+
+    li {
+        float: right 10%;
+        display: inline-block;
+        max-width: 25%;
+        text-align: right;
+        margin: auto;
+        height: 15px;
+    }
+
+    nav {
+        display: block;
+        max-width: 50%;
+        float: right;
+        margin: auto;
+    }
+    img {
+        max-height: 500px;
+        height: auto;
+        width: 100%;
+        display: block;
+        margin: 15px auto;
+        clear: both;
+    }
+    
+    #main {
+        max-width: 75%;
+        float: left;
+        margin: auto;
+    }
+    
+    .sub-section {
+        margin: auto;
+        max-width: 25%;
+        float: left;
+    }
+    
+    footer {
+        height: 30px;
+    }
 }
