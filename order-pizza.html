@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Pizza World</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="CSS/custom.css">
+        <!-- Your custom styles go here -->
+    </head>
+    <body>
+        <nav class="nav">
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link" href="#">Pizza World</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Order Online</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Zip Code">
+                <button class="btn btn-sm btn-outline-secondary" type="button">Search stores near you!</button>
+            </form>
+        </nav>
+        <div id="container-fluid">
+            <div class="jumbotron">
+                <h1>Welcome to Pizza World!</h1>
+            </div>
+            <h2>Build your own pizza!</h2>
+            <div class="nav nav-tabs">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                        <span class="badge-pill badge-secondary">
+                            1
+                        </span>
+                            Size and crust
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="badge-pill badge-secondary">
+                            2
+                            </span>
+                            Cheese and sauce
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="badge-pill badge-secondary">
+                            3
+                            </span>
+                            Toppings
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-header text-white bg-primary">Choose size and crust</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Hand Tossed</h5>
+                            <p class="card-text">Garlic seasoned crust with a rich, buttery taste.</p>
+                                <div class="list-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pizza-size" id="small-hand" value="option1">
+                                        <label class="form-check-label" for="small-hand">
+                                            Small (10")
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pizza-size" id="medium-hand" value="option2">
+                                        <label class="form-check-label" for="medium-hand">
+                                            Medium (12")
+                                        </label>
+                                    </div>
+                                </div>
+                        <h5 class="card-title">Crispy Thin</h5>
+                            <p class="card-text">Thin enough for optimum crispy to crunch ratio.</p>
+                        <ul class="list-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pizza-size" id="medium-thin" value="option1">
+                                <label class="form-check-label" for="medium-thin">
+                                    Medium (12")
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="pizza-size" id="large-thin" value="option2">
+                                <label class="form-check-label" for="large-thin">
+                                    Large (14")
+                                </label>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <footer class="text-right">
+                    <button type="submit" class="btn btn-primary">Next Step ></button>
+                </footer>
+        </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Your custom JS goes here -->
+    </body>
+</html>
