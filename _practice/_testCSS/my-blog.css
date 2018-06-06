@@ -1,6 +1,12 @@
+
+
+
+
+
+
 body {
     font-family: fantasy, sans-serif;
-    background-color: lightgrey;
+    background: linear-gradient(lightgray, white);
     margin: 20px;
 }
 
@@ -27,6 +33,11 @@ p {
     width: 100%;
 }
 
+.blog-img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
  .blog-welcome {
     text-align: center;
 }
@@ -48,7 +59,7 @@ p {
 }
 
 .box-1 {
-    box-shadow: black;
+    box-shadow: 5px 5px 25px #888888;
     background: white;
     float: left;
     height: 50% ;

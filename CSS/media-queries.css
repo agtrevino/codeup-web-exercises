@@ -47,14 +47,15 @@
 
     h1 {
         display: inline-block;
-        max-width: 50%;
         text-align: left;
         margin: auto;
+    }
+    .nav-links {
+        padding-left: 0;
     }
 
     li {
         display: inline-block;
-        max-width: 25%;
         text-align: right;
         margin: auto;
         height: 15px;
@@ -63,7 +64,6 @@
     nav {
         float: right;
         display: block;
-        max-width: 50%;
         margin: auto;
     }
     img {
@@ -76,14 +76,12 @@
     }
     
     #main {
-        max-width: 75%;
         float: left;
         margin: auto;
     }
     
     .sub-section {
         margin: auto;
-        max-width: 25%;
         float: left;
     }
     
