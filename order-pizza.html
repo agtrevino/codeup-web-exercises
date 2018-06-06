@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Pizza World</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link rel="stylesheet" href="CSS/custom.css">
         <!-- Your custom styles go here -->
     </head>
@@ -20,6 +21,9 @@
                 <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Zip Code">
                 <button class="btn btn-sm btn-outline-secondary" type="button">Search stores near you!</button>
             </form>
+                <div class="sign-up">
+                    <a><i class="fas fa-user"></i>Sign up</a>
+                </div>
         </nav>
         <div id="container-fluid">
             <div class="jumbotron">
@@ -91,11 +95,89 @@
                         </ul>
                     </div>
                 </div>
-                <footer class="text-right">
-                    <button type="submit" class="btn btn-primary">Next Step ></button>
-                </footer>
-        </div>
+            <footer class="text-right">
+                <button type="submit" class="btn btn-primary">Next Step ></button>
+            </footer>
+            <div class="card">
+                <div class="card-header text-white bg-primary">Choose cheese and sauce</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cheese</h5>
+                            <form class="form-inline">
+                                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">How Much?</label>
+                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                        <option selected>Regular</option>
+                                        <option value="1">Light</option>
+                                        <option value="2">Normal</option>
+                                        <option value="3">Extra</option>
+                                        <option value="4">Double</option>
+                                    </select>
+                            </form>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sauce</h5>
+                            <form class="form-inline">
+                                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">What Type?</label>
+                                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                    <option selected>Robust Inspired Tomato Sauce</option>
+                                    <option value="1">Marinara Sauce</option>
+                                    <option value="2">BBQ Sauce</option>
+                                    <option value="3">Alfredo Sauce</option>
+                                </select>
+                            </form>
+                    </div>
+                </div>
+            <div class="card">
+                <div class="card-header text-white bg-primary">Choose Toppings</div>
+                <div class="card-body">
+                    <h5 class="card-title">Choose Meats</h5>
+                    <form class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Beef
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Ham
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Philly Steak
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Bacon
+                        </label>
+                    </form>
+                    <h5 class="card-title">Choose non-meats</h5>
+                    <form class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Green Peppers
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Mushrooms
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Onions
+                        </label>
+                        <br>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Jalapeno Peppers
+                        </label>
+                    </form>
+                </div>
+            </div>
 
+
+        </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Your custom JS goes here -->
     </body>

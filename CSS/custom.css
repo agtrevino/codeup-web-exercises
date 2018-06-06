@@ -41,3 +41,8 @@ h1 {
 .list-group {
     margin: 0;
 }
+
+.sign-up {
+    display: inline-block;
+    float: right;
+}
