@@ -2,12 +2,6 @@
     margin: 10px;
 }
 
-.jumbotron {
-    padding-right: 0;
-    padding-left: 0;
-    background-image: url("../Images/pizza.png");
-}
-
 h1 {
     background: white;
     opacity: .5;
@@ -18,24 +12,56 @@ h1 {
 
 }
 
+select {
+    margin-left: 10px;
+    margin-bottom: 10px ;
+}
+
+.jumbotron {
+    padding-right: 0;
+    padding-left: 0;
+    background-image: url("../Images/pizza.png");
+}
+
+.list-group {
+    border-top: lightgray solid 1px;
+    background: lightskyblue;
+}
 .nav-link {
     padding: 0;
 }
+
+.card-container {
+    padding: 0;
+}
+
+.form-check-label {
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
 .card .card-header {
+    padding-left: 15px;
     margin: 0;
-    margin-bottom: 0;
+}
+
+.card-header {
+    border-left: 1px;
+}
+
+.card-body {
+    border: 0;
 }
 
 .card-title {
     margin: 40px 0;
-    border-bottom: 2px solid lightgray;
-    border-right: 2px solid lightgray;
+/*border-bottom: 2px solid lightgray;*/
+/*border-right: 2px solid lightgray;*/
 }
 
 .form-check {
-    margin: 10px 0;
-    border-bottom: 2px solid lightgray;
-    border-right: 2px solid lightgray;
+    margin: 10px;
+    background: lightskyblue;
 }
 
 .list-group {
@@ -43,6 +69,26 @@ h1 {
 }
 
 .sign-up {
-    display: inline-block;
-    float: right;
+    margin-left: auto;
+    text-align: right;
+
+}
+
+#search {
+    background: transparent;
+}
+
+.form-inline {
+    background: lightskyblue;
+
+    margin: 0;
+    border-top: 1px lightgray;
+}
+
+#group {
+    margin-right: 0;
+}
+
+.nav {
+    border: 0;
 }
