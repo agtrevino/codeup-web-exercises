@@ -58,4 +58,8 @@ alert("It is " + offerCanBeApplied + " that this offer can be applied");
 //
 // var passwordDoesNotIncludeUsername =;
 // var passwordTrim = ;
-// var usernameTrim = ;
+// var usernameTrim = ;(
+
+(function () {
+
+})();
