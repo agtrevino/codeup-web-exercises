@@ -1,5 +1,7 @@
 "use strict";
 
+(function () {
+
 /**
  * TODO:
  * Create a function called 'sayHello' that takes a parameter 'name'.
@@ -61,7 +63,7 @@ var random = Math.floor((Math.random() * 3) + 1);
  */
 
 function isTwo(number) {
-    return ( number === 2);
+    return (number === 2);
 
 }
 console.log(isTwo(random));
@@ -108,7 +110,7 @@ alert ("Your tip should be $" + (calculateTip(tipPercent,billTotal).toFixed(2)))
  * Example:
  * > var originalPrice = 100;
  * > var discountPercent = .2; // 20%
- * > applyDiscount(originalPrice, dicountPercent) // 80
+ * > applyDiscount(originalPrice, discountPercent) // 80
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
@@ -120,5 +122,7 @@ function applyDiscount(priceBeforeDiscount, discountPercentage) {
 var priceBeforeDiscount = prompt("What is the price before the discount?")
 var discountPercentage = prompt("What is the discount percentage?");
 
-alert("Your total , with the discount applied will be $"
+alert("Your total, with the discount applied, will be $"
     + applyDiscount(priceBeforeDiscount, discountPercentage).toFixed(2));
+
+})();
