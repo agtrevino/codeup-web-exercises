@@ -79,10 +79,10 @@ console.log(isTwo(random));
  */
 
 function calculateTip(tipPercent, billTotal) {
-    return tipPercent*billTotal;
+    return (tipPercent / 100) * billTotal;
     
 }
-console.log(calculateTip(.15, 33.42).toFixed(2));
+console.log(calculateTip(20, 100).toFixed(2));
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
@@ -94,7 +94,7 @@ var tipPercent = prompt("What percent would you like to tip?");
 var billTotal = prompt("What is the bill total?");
 
 function calculateTip(tipPercent, billTotal) {
-    return tipPercent*billTotal;
+    return (tipPercent / 100)*billTotal;
 }
 alert ("Your tip should be $" + (calculateTip(tipPercent,billTotal).toFixed(2)));
 
@@ -107,14 +107,14 @@ alert ("Your tip should be $" + (calculateTip(tipPercent,billTotal).toFixed(2)))
  *
  * Example:
  * > var originalPrice = 100;
- * > var dicountPercent = .2; // 20%
+ * > var discountPercent = .2; // 20%
  * > applyDiscount(originalPrice, dicountPercent) // 80
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
 function applyDiscount(priceBeforeDiscount, discountPercentage) {
-    return priceBeforeDiscount - (priceBeforeDiscount*discountPercentage);
+    return priceBeforeDiscount - (priceBeforeDiscount*(discountPercentage / 100));
 
 }
 var priceBeforeDiscount = prompt("What is the price before the discount?")
