@@ -1,4 +1,4 @@
-// (function () {
+(function () {
 
 
 "use strict";
@@ -181,8 +181,8 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
-    var userLuckyNumber = prompt("What is your lucky number?");
-    var userTotalAmount = prompt("What is your amount total?");
+    // var userLuckyNumber = prompt("What is your lucky number?");
+    // var userTotalAmount = prompt("What is your amount total?");
 
     function calculateTotal(luckyNumber, totalAmount) {
         var discountedPrice;
@@ -211,8 +211,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 
         return discountedPrice;
     }
-    // alert("your total is $" + calculateTotal(userLuckyNumber, userTotalAmount));
-    alert(calculateTotal( userLuckyNumber, userTotalAmount)).toFixed(2);
+    // alert("your total is $" + calculateTotal(parseInt(userLuckyNumber), parseInt(userTotalAmount)).toFixed(2));
 
 /**
  * TODO:
@@ -222,6 +221,12 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
+var userTotalAmount = prompt("What is your total amount?");
 
-// })()
+alert("Your original price is " + parseInt(userTotalAmount).toFixed(2));
+alert("Your Lucky Number is #" + luckyNumber
++ " and your discounted total is now $" + calculateTotal(luckyNumber, parseInt(userTotalAmount)).toFixed(2));
+
+
+})()
