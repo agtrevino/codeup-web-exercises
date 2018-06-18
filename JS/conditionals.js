@@ -74,17 +74,17 @@
      * console.logging the function's return value
      */
 
-//
+
 //  function analyzeColor(colorName) {
 //
 //      if (colorName === "blue") {
-//          console.log(colorName + " is the color of the sky.");
+//          return colorName + " is the color of the sky.";
 //
 //      } else if (colorName === "red") {
-//          console.log("Strawberries are " + colorName + ".")
+//          return "Strawberries are " + colorName + ".";
 //
 //      } else {
-//          console.log("I don't know anything about " + colorName + ".")
+//          return "I don't know anything about " + colorName + ".";
 //      }
 //
 //     }
@@ -140,23 +140,24 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 // var color = prompt("Submit a color");
 //
 // function analyzeColor(colorName) {
+//     var result;
 //
 //     switch (color) {
-//         case "blue"
-//         : alert(colorName + " is the color of the sky.");
+//         case "blue" :
+//             result = alert(colorName + " is the color of the sky.");
 //             break;
-//         case "red"
-//         : alert("Strawberries are " + colorName + ".");
+//         case "red":
+//             result = alert("Strawberries are " + colorName + ".");
 //         break;
 //
-//         default
-//         : alert("I don't know anything about " + colorName + ".");
+//         default:
+//             result = alert("I don't know anything about " + colorName + ".");
 //         break;
 //             }
+//             return result;
 //         }
+//
 //         console.log(analyzeColor(color));
-
-
 
 /* ########################################################################## */
 
@@ -181,8 +182,8 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
-    // var userLuckyNumber = prompt("What is your lucky number?");
-    // var userTotalAmount = prompt("What is your amount total?");
+    var userLuckyNumber = prompt("What is your lucky number?");
+    var userTotalAmount = prompt("What is your amount total?");
 
     function calculateTotal(luckyNumber, totalAmount) {
         var discountedPrice;
@@ -196,7 +197,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
                 break;
             case 2:
 
-              discountedPrice  = totalAmount - ((25 / 100) * totalAmount);
+                discountedPrice  = totalAmount - ((25 / 100) * totalAmount);
                 break;
             case 3:
                 discountedPrice = totalAmount - ((35 / 100) * totalAmount);
@@ -211,7 +212,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 
         return discountedPrice;
     }
-    // alert("your total is $" + calculateTotal(parseInt(userLuckyNumber), parseInt(userTotalAmount)).toFixed(2));
+    alert("your total is $" + calculateTotal(parseInt(userLuckyNumber), parseInt(userTotalAmount)).toFixed(2));
 
 /**
  * TODO:
@@ -221,12 +222,13 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-var luckyNumber = Math.floor(Math.random() * 6);
-var userTotalAmount = prompt("What is your total amount?");
+// var luckyNumber = Math.floor(Math.random() * 6);
 
-alert("Your original price is " + parseInt(userTotalAmount).toFixed(2));
-alert("Your Lucky Number is #" + luckyNumber
-+ " and your discounted total is now $" + calculateTotal(luckyNumber, parseInt(userTotalAmount)).toFixed(2));
+// var userTotalAmount = prompt("What is your total amount?");
+//
+// alert("Your original price is " + parseInt(userTotalAmount).toFixed(2));
+// alert("Your Lucky Number is #" + luckyNumber
+// + " and your discounted total is now $" + calculateTotal(luckyNumber, parseInt(userTotalAmount)).toFixed(2));
 
 
 })()
