@@ -4,7 +4,7 @@ while (true) {
     var userNumber = prompt("Enter an odd number between 1 and 50");
 
     if (userNumber % 2 !== 0 && userNumber <= 50) {
-        break;
+        continue;
     }
 }
 // console.log("here is an odd number: " + userNumber);
@@ -13,7 +13,7 @@ while (true) {
 
 for (var i = 1; i <= 50; i += 1){
 
-    if (i !== parseInt(userNumber)){
+    if (i !== parseInt(userNumber) && i ){
         console.log("here is an odd number: " + i);
         continue;
     } else {
@@ -22,6 +22,5 @@ for (var i = 1; i <= 50; i += 1){
     }
 
     if (i % 2 === 0){
-        continue;
     }
 }
