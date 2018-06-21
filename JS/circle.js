@@ -33,7 +33,7 @@
     console.log("Circle information rounded to the nearest whole number");
     circle.logInfo(true);
 
-    console.log("=======================================================");
+    console.log("=================================================");
     // TODO: Change the radius of the circle to 5.
 
     circle.radius = 5;
