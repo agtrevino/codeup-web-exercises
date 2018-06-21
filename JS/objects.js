@@ -89,14 +89,14 @@
         {title : "The Walkway", author : {firstName :"Corey", lastName :  "Doctorow"}},
         {title : "A Brief History in Time", author : {firstName :"Stephen", lastName :  "Hawking"}},
     ];
-    console.log(books);
-    for (var i = 0; i < books.length; i++){
-        console.log("Book # " + (i + 1));
-        console.log("Title: " + books[i].title );
-        console.log("Author: " + books[i].author.firstName + " " + books[i].author.lastName)
-        console.log("---")
-    }
-
+    // console.log(books);
+    // for (var i = 0; i < books.length; i++){
+    //     console.log("Book # " + (i + 1));
+    //     console.log("Title: " + books[i].title );
+    //     console.log("Author: " + books[i].author.firstName + " " + books[i].author.lastName)
+    //     console.log("---")
+    // }
+    //
 
 
     /**
@@ -123,6 +123,15 @@
      *      ---
      *      ...
      */
+
+    books.forEach(function (books, i) {
+            console.log("Book # " + (i + 1));
+            console.log("Title: " + books[i].title);
+            console.log("Author: " + books[i].author.firstName + " " + books[i].author.lastName);
+            console.log("---");
+    });
+
+
 
     /**
      * Bonus:
