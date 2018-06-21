@@ -20,7 +20,7 @@ select {
 .jumbotron {
     padding-right: 0;
     padding-left: 0;
-    background-image: url("../Images/pizza.png");
+    background-image: url("../img/pizza.png");
 }
 
 .list-group {
