@@ -14,7 +14,7 @@
         },
 
         logInfo: function (doRounding) {
-            var output = Math.PI * Math.pow(circle.radius, 2);
+            var output = this.getArea();
             // TODO: complete this method.
             // If doRounding is true, round the result to the nearest integer.
             // Otherwise, output the complete value
