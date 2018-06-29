@@ -33,3 +33,21 @@ $('li').dblclick(function () {
     console.log('double clicked')
 
 });
+
+function backgroundChange(){
+    $('h1').css('background','blue')
+
+}
+$('h1').click(backgroundChange);
+
+function fontChange(){
+    $('p').css('font-size','18px')
+
+}
+$('p').dblclick(fontChange);
+
+function highlight() {
+    $('li').css('color', 'blue');
+}
+
+$('li').hover(highlight);
