@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
 
-    alert('The DOM has finished loading!');
+    // alert('The DOM has finished loading!');
 });
 $(function () {
 
@@ -14,5 +14,22 @@ $(function () {
             $(this).css("font-size", "50px")
     });
 
-    $(".codeup").css("border","1px black");
+    $('.codeup, li').css('background-color', '#FF0');
+});
+
+
+// callback function
+
+function logClicked(){
+    console.log('clicked');
+}
+
+document.getElementById('gsd').addEventListener('click',logClicked);
+
+
+// double click using this
+
+$('li').dblclick(function () {
+    console.log('double clicked')
+
 });
