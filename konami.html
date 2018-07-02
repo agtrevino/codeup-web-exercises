@@ -4,7 +4,10 @@
     <title>Konami Code</title>
 </head>
 <body>
-<h1>Konami Code</h1>
+    <h1>Konami Code</h1>
+    <div class="konami-header">
+        <img class="gengar-gif" style="display: none" src="../bracket-studio-website/img/gifs/Gengar.gif_c200">
+    </div>
 
 <script src="js/jquery-2.2.4.js"></script>
 <script>
@@ -15,8 +18,36 @@
     function konamiCode (input){
         inputString.push(input.keyCode);
             if (inputString.toString().indexOf(konamiKeys) >= 0 ){
+
+                // code success
+
                 console.log('success');
-                $("h1").css('background','blue');
+
+
+
+                $(".gengar-gif").css('display','block');
+                $(".gengar-gif").css('margin','auto');
+
+
+                $("body").css('height','100%');
+                $("body").css('background','url("../bracket-studio-website/img/backgrounds/coastline.jpg")');
+
+                $("h1").css('background','rgb(48,54,60)');
+                $("h1").css('font-size','100px');
+                $("h1").css('text-align','center');
+                $("h1").css('border-radius','20px');
+                $("@font-face").css('font-family','Konami');
+                $("@font-face").css('src','url("../bracket-studio-website/")');
+
+                $("h1").css('font-family','fantasy');
+                $("h1").css('padding','50px');
+
+                $("h1").css('transition','2000ms');
+
+
+
+
+                // code success
 
                 inputString = [];
             }
