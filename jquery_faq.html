@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/jquery-2.2.4.js"></script>
+        <title>TEST TEST TEST</title>
+    </head>
+    <body>
+
+    <button  class="toggle-button">Toggle</button>
+
+    <dl>
+        <dt>Park-1</dt>
+        <dd class="invisible">FAQ-1</dd>
+        <dt>Park-2</dt>
+        <dd class="invisible">FAQ-2</dd>
+        <dt>Park-3</dt>
+        <dd class="invisible">FAQ-3</dd>
+        <dt>Park-4</dt>
+        <dd class="invisible">FAQ-4</dd>
+        <dt>Park-5</dt>
+        <dd class="invisible">FAQ-5</dd>
+        <dt>Park-6</dt>
+        <dd class="invisible">FAQ-6</dd>
+        <dt>Park-7</dt>
+        <dd class="invisible">FAQ-7</dd>
+        <dt>Park-8</dt>
+        <dd class="invisible">FAQ-8</dd>
+        <dt>Park-9</dt>
+        <dd class="invisible">FAQ-9</dd>
+        <dt>Park-10</dt>
+        <dd class="invisible">FAQ-10</dd>
+
+    </dl>
+    
+    <style>
+        body {
+            background: #656c7a;
+        }
+
+        dt {
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+
+        dd {
+            text-align: center;
+            padding: 5px 0;
+            width: 80px;
+            border-radius: 100px;
+            transition: 500ms;
+        }
+
+        .highlighted {
+            text-align: center;
+            padding: 10px 25px;
+            width: 80px;
+            border-radius: 100px;
+            background: yellow;
+            transition: 500ms;
+        }
+
+        .invisible {
+            display: none;
+            transition: 300ms;
+        }
+        .toggle-button {
+            text-align: center;
+            padding: 10px 20px;
+            background: #00b3ee;
+            border: solid #1b2ee0 3px;
+            border-radius: 10px ;
+        }
+
+        button {
+            transition: 500ms;
+        }
+
+        button:hover {
+            border: solid #2ecc71 3px;
+            transition: 500ms;
+        }
+    </style>
+    
+    <script>
+        "use strict";
+
+        $("button").click(function() {
+            $('dd').toggleClass("invisible");
+        });
+
+        $('dt').click(function () {
+            $('dd').toggleClass("highlighted");
+
+        });
+
+        $("dt").first(function () {
+            console.log($(this).text());
+        });
+
+        $('dl').children().toggleClass('highlighted');
+
+
+        $('dl').click(function () {
+
+            $('dd').parent().toggle(9999);
+        });
+
+
+
+
+    </script>
+    </body>
+</html>
