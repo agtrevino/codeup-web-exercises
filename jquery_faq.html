@@ -2,7 +2,7 @@
 <html>
     <head>
         <script src="js/jquery-2.2.4.js"></script>
-        <title>TEST TEST TEST</title>
+        <title>JQuery</title>
     </head>
     <body>
 
@@ -33,7 +33,7 @@
     <!--</dl>-->
 
     <h3>State Parks of Texas</h3>
-    <ul id="state-parks-texa-1">
+    <ul id="state-parks-texas-1">
         <li>Abilene</li>
         <li>Big Bend</li>
         <li>Choke Canyon</li>
@@ -77,6 +77,10 @@
             text-align: left;
         }
 
+        .bold-text {
+            font-weight: bold;
+        }
+
         .highlighted {
             text-align: left ;
             padding: 10px 25px;
@@ -111,13 +115,34 @@
     <script>
         "use strict";
 
+
+        $('button').click(function () {
+
+            $('ul').each(function (index, element) {
+                console.log(element);
+                $(element).children().last().addClass('highlighted');
+            });
+        });
+
+            // Or
+
         $("button").click(function () {
             $('li:last-child').toggleClass('highlighted');
         });
 
-        // $("button").click(function() {
-        //     $('dd').last('li').toggleClass("invisible");
-        // });
+
+
+        //
+        //
+        //
+        $("h3").click(function() {
+            $(this).next().addClass("bold-text");
+        });
+
+        ('li').click(function () {
+            $(this).parent().children().first().css('back', 'blue');
+        });
+
         //
         // $('dt').click(function () {
         //     $('dd').toggleClass("highlighted");
