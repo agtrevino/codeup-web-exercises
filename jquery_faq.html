@@ -8,29 +8,46 @@
 
     <button  class="toggle-button">Toggle</button>
 
-    <dl>
-        <dt>Park-1</dt>
-        <dd class="invisible">FAQ-1</dd>
-        <dt>Park-2</dt>
-        <dd class="invisible">FAQ-2</dd>
-        <dt>Park-3</dt>
-        <dd class="invisible">FAQ-3</dd>
-        <dt>Park-4</dt>
-        <dd class="invisible">FAQ-4</dd>
-        <dt>Park-5</dt>
-        <dd class="invisible">FAQ-5</dd>
-        <dt>Park-6</dt>
-        <dd class="invisible">FAQ-6</dd>
-        <dt>Park-7</dt>
-        <dd class="invisible">FAQ-7</dd>
-        <dt>Park-8</dt>
-        <dd class="invisible">FAQ-8</dd>
-        <dt>Park-9</dt>
-        <dd class="invisible">FAQ-9</dd>
-        <dt>Park-10</dt>
-        <dd class="invisible">FAQ-10</dd>
+    <!--<dl>-->
+        <!--<dt>Park-1</dt>-->
+        <!--<dd class="invisible">FAQ-1</dd>-->
+        <!--<dt>Park-2</dt>-->
+        <!--<dd class="invisible">FAQ-2</dd>-->
+        <!--<dt>Park-3</dt>-->
+        <!--<dd class="invisible">FAQ-3</dd>-->
+        <!--<dt>Park-4</dt>-->
+        <!--<dd class="invisible">FAQ-4</dd>-->
+        <!--<dt>Park-5</dt>-->
+        <!--<dd class="invisible">FAQ-5</dd>-->
+        <!--<dt>Park-6</dt>-->
+        <!--<dd class="invisible">FAQ-6</dd>-->
+        <!--<dt>Park-7</dt>-->
+        <!--<dd class="invisible">FAQ-7</dd>-->
+        <!--<dt>Park-8</dt>-->
+        <!--<dd class="invisible">FAQ-8</dd>-->
+        <!--<dt>Park-9</dt>-->
+        <!--<dd class="invisible">FAQ-9</dd>-->
+        <!--<dt>Park-10</dt>-->
+        <!--<dd class="invisible">FAQ-10</dd>-->
 
-    </dl>
+    <!--</dl>-->
+
+    <h3>State Parks of Texas</h3>
+    <ul id="state-parks-texa-1">
+        <li>Abilene</li>
+        <li>Big Bend</li>
+        <li>Choke Canyon</li>
+        <li>Davis Mountains</li>
+        <li>Enchanted Rock</li>
+    </ul>
+    <h3>State Parks of Texas</h3>
+    <ul id="state-parks-texas-2">
+        <li>Abilene</li>
+        <li>Big Bend</li>
+        <li>Choke Canyon</li>
+        <li>Davis Mountains</li>
+        <li>Enchanted Rock</li>
+    </ul>
     
     <style>
         body {
@@ -50,11 +67,20 @@
             border-radius: 100px;
             transition: 500ms;
         }
+        ul {
+            list-style: none;
+        }
+
+        li {
+            transition: 500ms;
+            width: 180px;
+            text-align: left;
+        }
 
         .highlighted {
-            text-align: center;
+            text-align: left ;
             padding: 10px 25px;
-            width: 80px;
+            width: 180px;
             border-radius: 100px;
             background: yellow;
             transition: 500ms;
@@ -85,26 +111,29 @@
     <script>
         "use strict";
 
-        $("button").click(function() {
-            $('dd').toggleClass("invisible");
+        $("button").click(function () {
+            $('li:last-child').toggleClass('highlighted');
         });
 
-        $('dt').click(function () {
-            $('dd').toggleClass("highlighted");
+        // $("button").click(function() {
+        //     $('dd').last('li').toggleClass("invisible");
+        // });
+        //
+        // $('dt').click(function () {
+        //     $('dd').toggleClass("highlighted");
+        //
+        // });
+        //
+        // $("dt").first(function () {
+        //     console.log($(this).text());
+        // });
 
-        });
+        // $('dl').last().toggleClass('highlighted');
 
-        $("dt").first(function () {
-            console.log($(this).text());
-        });
-
-        $('dl').children().toggleClass('highlighted');
-
-
-        $('dl').click(function () {
-
-            $('dd').parent().toggle(9999);
-        });
+        // $('dl').click(function () {
+        //
+        //     $('dd').parent().toggle(9999);
+        // });
 
 
 
