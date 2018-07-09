@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    h4{
+        text-decoration: underline;
+    }
+
+    a{
+        color: blue;
+    }
+
+    #posts {
+        text-align: left;
+        padding: 25px;
+        border: 1px solid black;
+    }
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+
+    <div id="posts"></div>
+
+<script>
+
+    //title content categories date
+    (function () {
+
+        $.ajax('data/blog.json').done(function (data,status,jqXhr) {
+
+            $(data.forEach(function (blog) {
+                $('#posts').append('<div>');
+                $('#posts').append('<h2>' + blog.title + '</h2>' + '<span>' + blog.date + '</span>' + '<hr>');
+                $('#posts').append('<p>' + blog.content + '</p>');
+                $('#posts').append('<h4>' + 'Categories: ' + '</h4><a>' + blog.categories + '</a><br>');
+
+
+                $('#posts').append('</div>');
+            }))
+
+        });
+
+    })();
+
+
+</script>
+
+
+
+</body>
+</html>
