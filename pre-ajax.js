@@ -17,10 +17,11 @@ $(document).ready(function() {
         }
     ];
 
+
     $('#add-names-btn').click(function () {
         $('#names-list').append('<ul>');
         people.forEach(function (person) {
-            $('#names-list').append('<li>' + person.name + '</li>');
+            $('#names-list').append("<li style='color:"+ person.favColor + "'>" + person.name + '</li>');
         });
         $('#names-list').append('</ul>');
     })
