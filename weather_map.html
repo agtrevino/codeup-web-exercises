@@ -11,21 +11,24 @@
         body{
             font-family: "Helvetica Neue";
             text-align: center;
+            background: url("../codeup-web-exercises/img/weather-wallpaper.jpg");
         }
         .weather-app {
+            color: white;
             padding-top: 10px;
             margin: auto;
-            border: #49afcd solid 3px;
-            background: #49afcd;
+            border: black solid 3px;
+            background: rgba(50,50,50,0.4);
         }
         .weather-info {
+            border: black solid 3px;
             padding: 10px 5px;
             margin: 3px;
-            background: white;
+            background: rgba(0,0,0,0.3);
         }
         #map-canvas {
             width: 100%;
-            height: 420px;
+            height: 350px;
             margin-bottom: 20px;
         }
 
@@ -56,7 +59,6 @@
 
         (function () {
 
-
             function initMap() {
                 var codeup = {lat: 29.426791, lng: -98.489602};
                 var mapOptions = {
@@ -71,11 +73,6 @@
                     map: map,
                     draggable: true
                 });
-
-
-
-                //
-
                 google.maps.event.addListener(marker,'dragend', function () {
                     console.log(this.getPosition().lat, this.getPosition().lng());
                     var lat = marker.getPosition().lat();
@@ -97,6 +94,7 @@
                             '<li><strong>' + 'Wind: ' + '</strong>' + data.list[0].wind.speed + '</li>' +
                             '<li><strong>' + 'Pressure: ' + '</strong>' + data.list[0].main.pressure + '</li>' +
                             '</ul>');
+
                         $('#day-2-weather').html('<h3>' + data.list[8].main.temp_min + '&#176;' + ' / ' + data.list[8].main.temp_min + '&#176;' + '</h3>' +
                             '<ul style="list-style: none">' +
                             '<li><strong>' + data.list[8].weather[0].main + ': ' + '</strong>' + data.list[16].weather[0].description + '</li>' +
@@ -105,6 +103,7 @@
                             '<li><strong>' + 'Wind: ' + '</strong>' + data.list[8].wind.speed + '</li>' +
                             '<li><strong>' + 'Pressure: ' + '</strong>' + data.list[8].main.pressure + '</li>' +
                             '</ul>');
+
                         $('#day-3-weather').html('<h3>' + data.list[16].main.temp_min + '&#176;' + ' / ' + data.list[16].main.temp_min + '&#176;' + '</h3>' +
                             '<ul style="list-style: none">' +
                             '<li><strong>' + data.list[16].weather[0].main + ': ' + '</strong>' + data.list[16].weather[0].description + '</li>' +
@@ -113,8 +112,6 @@
                             '<li><strong>' + 'Wind: ' + '</strong>' + data.list[16].wind.speed + '</li>' +
                             '<li><strong>' + 'Pressure: ' + '</strong>' + data.list[16].main.pressure + '</li>' +
                             '</ul>');
-
-                        // "http://openweathermap.org/img/w/' + data.list[16].weather[0].icon + '.png"
                     });
                 });
             }
