@@ -39,10 +39,7 @@
     $('#refresh-btn').click(function () {
 
     $.ajax('data/inventory.json').done(function (data,status,jqXhr) {
-        console.log("success");
-        console.log(data);
-        console.log(status);
-        console.log(jqXhr);
+        console.log("working");
 
         $('#insertProducts').append('<tbody>');
 
@@ -52,7 +49,7 @@
             $('#insertProducts').append('<td>' + item.quantity + '</td>');
             $('#insertProducts').append('<td>' + '$' + item.price.toFixed(2) + '</td>');
             $('#insertProducts').append('<td>' + item.categories + '</td>');
-            $('#insertProducts').append('</tr>');
+            $('#insertProducts').append('</tr><br>');
         }));
 
         $('#insertProducts').append('</tbody>');
