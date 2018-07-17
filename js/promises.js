@@ -11,11 +11,11 @@
     // };
     //
     // wait(3000).then(() => console.log('You\'ll see this after 3 seconds'));
-
-
+    //
+    //
     // const arr = ["this", "is", "a", "test"];
     //
-    // console.log(arr.map(w => w+"**"));
+    // console.log(arr.map(w => w + " yo"));
 
 
     const getLastEvent = username => {
@@ -24,10 +24,8 @@
         return fetch(url, {headers: {'Authorization': `token ${token}`}}).then(data => data.json());
     };
     getLastEvent('agtrevino')
-        // .then(events => events.filter(event => event.type === "createEvent"))
-        .then(data => {
-            console.log(data[0].created_at)
-        });
+        .then(data => console.log(data[0]))
+
 
 
 
